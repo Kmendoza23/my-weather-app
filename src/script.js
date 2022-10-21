@@ -105,3 +105,5 @@ function fahrenheitChange(event) {
 
 let degreeFahrenheit = document.querySelector("#fahrenheit-link");
 degreeFahrenheit.addEventListener("click", fahrenheitChange);
+
+o
