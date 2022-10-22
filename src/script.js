@@ -4,6 +4,9 @@ let day = days[now.getDay()];
 let hour = now.getHours();
 let minute = now.getMinutes();
 
+let currentDate = document.querySelector("#current-date");
+currentDate.innerHTML = `${day}, ${hour}:${minute}`;
+
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
