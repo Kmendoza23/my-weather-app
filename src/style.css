@@ -112,6 +112,7 @@ h1 {
   }
   
   .open-source-link {
+    color: white;
     position: relative;
     bottom: 220px;
     left: 510px;
