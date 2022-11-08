@@ -1,30 +1,44 @@
-let now = new Date();
-let days = ["Sun", "Mon", "Tue", "Wed", "Thrus", "Fri", "Sat"];
-let day = days[now.getDay()];
-let hour = now.getHours();
-let minute = now.getMinutes();
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
 
-let currentDate = document.querySelector("#current-date");
-currentDate.innerHTML = `${day}, ${hour}:${minute}`;
-
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  return `${day} ${hours}:${minutes}`;
+}
 
 function showTemperature(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let humidity = Math.round(response.data.main.humidity);
-  let windSpeed = Math.round(response.data.wind.speed);
-  let feelsLike = Math.round(response.data.main.feels_like);
-
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = `${temperature}`;
-
+  let cityElement = document.querySelector("#city");
+  let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
-  humidityElement.innerHTML = `Humidity : ${humidity}%`;
+  let windElement = document.querySelector("#wind");
+  let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
 
-  let windSpeedElement = document.querySelector("#wind-speed");
-  windSpeedElement.innerHTML = `Wind Speed : ${windSpeed} mph`;
+  celsiusTemperature = response.data.main.temp;
 
-  let feelsLikeElement = document.querySelector("#feels-like");
-  feelsLikeElement.innerHTML = `Feels like ${feelsLike}°F`;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  cityElement.innerHTML = response.data.name;
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 function userCityInput(event) {
@@ -41,33 +55,6 @@ function userCityInput(event) {
 
 let formInput = document.querySelector("#search-form");
 formInput.addEventListener("submit", userCityInput);
-
-//Week 5 button challenge
-
-function showCurrentTemperature(response) {
-  console.log(response.data.name);
-
-  let currentLocation = response.data.name;
-  let currentTemperature = Math.round(response.data.main.temp);
-  let currentHumidity = Math.round(response.data.main.humidity);
-  let currentWindSpeed = Math.round(response.data.wind.speed);
-  let currentFeelsLike = Math.round(response.data.main.feels_like);
-
-  let currentLocationElement = document.querySelector("#user-city");
-  currentLocationElement.innerHTML = `${currentLocation}`;
-
-  let currentTemperatureElement = document.querySelector("#temperature");
-  currentTemperatureElement.innerHTML = `${currentTemperature}`;
-
-  let currentHumidityElement = document.querySelector("#humidity");
-  currentHumidityElement.innerHTML = `Humidity : ${currentHumidity}%`;
-
-  let currentWindSpeedElement = document.querySelector("#wind-speed");
-  currentWindSpeedElement.innerHTML = `Wind Speed : ${currentWindSpeed} mph`;
-
-  let currentFeelsLikeElement = document.querySelector("#feels-like");
-  currentFeelsLikeElement.innerHTML = `Feels like ${currentFeelsLike}°F`;
-}
 
 function showPosition(position) {
   console.log(position);

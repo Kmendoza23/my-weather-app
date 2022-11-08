@@ -22,112 +22,127 @@
   </head>
   <body>
     <div class="container">
-      <div class="city-search-engine">
-        <form id="search-form">
-          <div class="row justify-content-start">
-            <div class="col-6">
-              <input
-                type="text"
-                autocomplete="off"
-                autofocus="on"
-                placeholder="Enter city here"
-                id="input-city"
-              />
-
-              <input
-                type="submit"
-                class="btn btn-outline-light"
-                value="Search"
-              />
+      <div class="main-weather-card">  
+        <div class="city-search-engine">
+          <form id="search-form">
+            <div class="row justify-content-start">
+              <div class="col-6">
+                <input
+                  type="text"
+                  autocomplete="off"
+                  autofocus="on"
+                  placeholder="Enter city here"
+                  id="input-city"
+                />
+  
+                <input
+                  type="submit"
+                  class="btn btn-outline-light"
+                  value="Search"
+                />
+              </div>
             </div>
-          </div>
-        </form>
-      </div>
-      <br />
-
-      <button class="current-button btn btn-outline-light" id="current-button">Current City</button>
-
-      <div class="main-city" id="main-city">
-        <div class="row">
-          <div class="col">
-              <span class="temperature" id="temperature">12</span> 
-              <span class="units" id="units">
-              <a href = "#" id="celcius-link"> °C </a href> /
-              <a href = "#" id="fahrenheit-link"> °F </a href> 
-              </span>
-
-
-            <div class="row">
-              <div class="col">
-                <h2 id="user-city">Lisbon</h2>
+          </form>
+        </div>
+        <br />
+  
+        <button class="current-city-button btn btn-outline-light" id="current-city-button">Current City</button>
+  
+      <div class="weather-info">
+        <div class="main-city" id="main-city">
+          <div class="row">
+            <div class="col">
+                <span class="temperature" id="temperature">12</span> 
+                <span class="units">
+                <a href = "#" id="celcius-link"> °C </a href> /
+                <a href = "#" id="fahrenheit-link"> °F </a href> 
+                </span>
+  
+  
+              <div class="row">
+                <div class="col">
+                  <h2 id="city">Lisbon</h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-
-      <div class="date-and-time">
-        <div class="row">
-          <div class="col" id="current-date">
-            Mon, 1:09 PM
+  
+  
+        <div class="date-and-time">
+          <div class="row">
+            <div class="col" id="current-date">
+              Mon, 1:09
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="humidity" >
-        <div class="row">
-          <div class="col" id="humidity">
-            Humidity : 45%
-          </div>
-        </div>
-      </div>
-
-      <div class="wind-speed" >
-        <div class="row">
-          <div class="col" id="wind-speed">
-              Wind Speed : 10 mph
-          </div>
-        </div>
-      </div>
-
-      <div class="feels-like" >
-        <div class="row">
-          <div class="col" id="feels-like">
-            Feels like 60  °F 
-          </div>
-        </div>
-      </div>
-      
-      <div class="weekly-outlook-data" id="weekly-outlook-data">
-        <div class="row row-cols-3">
-          <div class="col">Monday</div>
-          <div class="col">&#9925;</div>
-          <div class="col">67° f</div>
-
-          <div class="col">Tuesday</div>
-          <div class="col">&#9925;</div>
-          <div class="col">73° f</div>
-
-          <div class="col">Wednesday</div>
-          <div class="col">&#9925;</div>
-          <div class="col">95° f</div>
-
-          <div class="col">Thursday</div>
-          <div class="col">&#127774;</div>
-          <div class="col">98° f</div>
-
-          <div class="col">Friday</div>
-          <div class="col">&#127774;</div>
-          <div class="col">98° f</div>
-
-          <div class="col">Saturday</div>
-          <div class="col">&#127774;</div>
-          <div class="col">102° f</div>
-        </div>
+  
+      <div class="weather-details">
+        <ul>
+            <li>Humidity : <span id="humidity">45</span>%</li>
+            <li>Wind Speed : <span id="wind-speed">10</span> mph</li>
+            <li>Feels like <span id="feels-like">60</span>  °F</li>
+        </ul>
+      </div>  
+    </div> 
+  
+        <div class="week-preview row">
+          <div class="col">
+           <div class="forecast-day">Tuesday</div>
+              <div class="forecast-temp">
+                <span class="max-temp">12</span>
+                <span class="min-temp">07</span>
+              </div>
+            </div>
+          
+  
+           <div class="col">
+            <div class="forecast-day">Wednesday</div>
+              <div class="forecast-temp">
+                <span class="max-temp">12</span>
+                <span class="min-temp">07</span>
+              </div>
+            </div>
+           
+  
+          <div class="col">
+           <div class="forecast-day">Thursday</div>
+              <div class="forecast-temp">
+                <span class="max-temp">12</span>
+                <span class="min-temp">07</span>
+              </div>
+            </div>
+          
+  
+          <div class="col">
+            <div class="forecast-day">Friday</div>
+              <div class="forecast-temp">
+                <span class="max-temp">12</span>
+                <span class="min-temp">07</span>
+              </div>
+            </div>
+        
+  
+          <div class="col">
+            <div class="forecast-day">Saturday</div>
+              <div class="forecast-temp">
+                <span class="max-temp">12</span>
+                <span class="min-temp">07</span>
+              </div>
+            </div>
+          
+  
+         <div class="col">
+            <div class="forecast-day">Sunday</div>
+              <div class="forecast-temp">
+                <span class="max-temp">12</span>
+                <span class="min-temp">07</span>
+              </div>
+            </div>
+        
+  
       </div>
     </div>
-
     <div class="open-source-link"id="source-code">
     <a href = "https://github.com/Kmendoza23/my-weather-app">Open-source code</a> by Karen Mendoza
     </div>

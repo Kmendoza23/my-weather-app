@@ -1,115 +1,126 @@
 h1 {
-    font-size: 90px;
-    color: white;
-  }
-  
-  body {
-    background: url("../img/weatherBackground1.jpg");
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-  }
-  
-  .city-search-engine {
-    display: block;
-    position: relative;
-    margin: 30px 30px 0px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 0, 100;
-  }
-  
-  .current-button {
-    position: relative;
-    top: -61px;
-    left: 305px;
-    margin: 0px 0px 0px 30px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    background-color: ;
-  }
-  
-  img {
-    display: block;
-    position: relative;
-    top: 60px;
-    right: 50px;
-    width: 100%;
-  }
-  
-  .temperature {
-    color: #ffffff;
-    font-size: 70px;
-    font-weight: 500px;
-    line-height: 1;
-  }
-  
-  .units {
-    position: relative;
-    top: -35px;
-    left: 10px;
-    font-size: 25px;
-  }
-  
-  .main-city {
-    position: relative;
-    top: 30px;
-    left: 35px;
-    color: white;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 0, 700;
-  }
-  
-  .date-and-time {
-    position: relative;
-    top: 40px;
-    left: 35px;
-    color: white;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 0, 600;
-  }
-  
-  .humidity {
-    position: relative;
-    top: 50px;
-    left: 35px;
-    color: white;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 0, 600;
-  }
-  
-  .wind-speed {
-    position: relative;
-    top: 50px;
-    left: 35px;
-    color: white;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 0, 600;
-  }
-  
-  .feels-like {
-    position: relative;
-    top: 50px;
-    left: 35px;
-    color: white;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 0, 600;
-  }
-  
-  .weekly-outlook-data {
-    border-radius: 25px;
-    position: relative;
-    top: -200px;
-    left: 350px;
-    margin: 30px 35px;
-    padding: 30px 5px 30px 30px;
-    max-width: 500px;
-    color: white;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 0, 500;
-    font-size: 17px;
-    background-color: #bf72a6;
-  }
+  font-size: 90px;
+  color: white;
+}
+
+body {
+  background: url("../img/weatherBackground.jpg");
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.city-search-engine {
+  display: block;
+  position: relative;
+  margin: 30px 30px 0px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 0, 100;
+}
+
+.current-city-button {
+  position: relative;
+  top: -61px;
+  left: 305px;
+  margin: 0px 0px 0px 30px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: rgab(0,0,0,0);
+}
+
+img {
+  display: block;
+  position: relative;
+  top: 60px;
+  right: 50px;
+  width: 100%;
+}
+
+.main-weather-card {
+  position: relative;
+  border-radius: 25px;
+  background-image: linear-gradient(
+    rgb(204, 117, 168, 1),
+    rgba(181, 255, 255, 0)
+  );
+  padding: 10px;
+  margin: 30px;
+}
+
+.weather-info {
+  position: relative;
+  top: -10px;
+  left: 200px;
+  margin: 20px 10px 30px;
+}
+
+.temperature {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 500px;
+  line-height: 1;
+}
+
+.units {
+  position: relative;
+  top: -35px;
+  left: 10px;
+  font-size: 25px;
+}
+
+.main-city {
+  position: relative;
+  top: 30px;
+  left: 35px;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 0, 700;
+}
+
+.date-and-time {
+  position: relative;
+  top: 40px;
+  left: 35px;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 0, 600;
+}
+
+.weather-details {
+  position: relative;
+  top: -160px;
+  left: 300px;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 0, 600;
+}
+
+
+.weather-forecast {
+  position: relative;
+  top: 150px;
+  left: -300px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.forecast-day {
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 100%;
+}
+
+.forecast-temp {
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 110%;
+}
+
+.week-preview {
+  color: white;
+}
   
   .open-source-link {
     color: white;
