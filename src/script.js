@@ -68,29 +68,11 @@ function showPosition(position) {
   axios.get(apiUrl).then(showCurrentTemperature);
 }
 
+
+////
 function getCurrentCity() {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
 
 let currentCityButton = document.querySelector("#current-city-button");
 currentCityButton.addEventListener("click", getCurrentCity);
-
-//cecliusChange
-function celciusChange(event) {
-  event.preventDefault();
-  let celciusTemperature = document.querySelector("#temperature");
-  celciusTemperature.innerHTML = "14";
-}
-
-let degreeCelcius = document.querySelector("#celcius-link");
-degreeCelcius.addEventListener("click", celciusChange);
-
-function fahrenheitChange(event) {
-  event.preventDefault();
-  let fahrenheitTemperature = document.querySelector("#temperature");
-  fahrenheitTemperature.innerHTML = "54";
-}
-
-let degreeFahrenheit = document.querySelector("#fahrenheit-link");
-degreeFahrenheit.addEventListener("click", fahrenheitChange);
-
