@@ -41,6 +41,13 @@ img {
   width: 100%;
 }
 
+.weather-icon {
+  display: block;
+  position: relative;
+  height: 64px;
+  width: 64px;
+}
+
 .main-weather-card {
   position: relative;
   border-radius: 25px;
