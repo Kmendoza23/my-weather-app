@@ -4,7 +4,7 @@ h1 {
 }
 
 body {
-  background: url("../img/weatherBackground1.jpg");
+  background: url("../img/weatherBackgroun.jpg");
   width: 100%;
   position: absolute;
   top: 0;
@@ -53,6 +53,9 @@ img {
   top: -10px;
   left: 200px;
   margin: 20px 10px 30px;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 0, 700;
 }
 
 .temperature {
@@ -67,15 +70,6 @@ img {
   top: -35px;
   left: 10px;
   font-size: 25px;
-}
-
-.main-city {
-  position: relative;
-  top: 30px;
-  left: 35px;
-  color: white;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 0, 700;
 }
 
 .date-and-time {
