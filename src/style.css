@@ -44,6 +44,7 @@ img {
 .weather-icon {
   display: block;
   position: relative;
+  margin-right: 5px;
   height: 64px;
   width: 64px;
 }
