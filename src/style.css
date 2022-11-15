@@ -36,6 +36,7 @@ ul {
 .weather-icon {
   display: block;
   position: relative;
+  left: 100px;
   margin-right: 5px;
   height: 64px;
   width: 64px;
