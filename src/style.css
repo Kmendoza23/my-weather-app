@@ -106,6 +106,6 @@ ul {
     color: white;
     position: relative;
     margin: 10px;
-    bottom: -210px;
+    top: -210px;
     left: 570px;
 }
