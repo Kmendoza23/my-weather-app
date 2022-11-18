@@ -76,8 +76,7 @@ ul {
 
 .weather-details {
   position: relative;
-  top: -200px;
-  left: 500px;
+  top: -300px;
   color: white;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 0, 600;
