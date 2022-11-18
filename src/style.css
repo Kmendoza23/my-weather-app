@@ -52,6 +52,7 @@ ul {
 
 .city-weather {
   position: relative;
+  top: -100px;
   left: 200px;
   margin: 20px 10px 30px;
   color: white;
@@ -75,9 +76,10 @@ ul {
 
 .weather-details {
   position: relative;
-  top: -10px;
-  left: 510px;
+  top: -170px;
+  left: 540px;
   color: white;
+  margin: 10px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 0, 600;
 }
@@ -100,9 +102,10 @@ ul {
   color: white;
 }
   
-  .open-source-link {
+.open-source-link {
     color: white;
     position: relative;
-    bottom: 220px;
-    left: 510px;
-  }
+    margin: 10px;
+    bottom: -210px;
+    left: 570px;
+}
