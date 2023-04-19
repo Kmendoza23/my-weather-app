@@ -18,7 +18,9 @@ ul {
 }
 
 .city-name{
-
+  display: block;
+  font-size: 35px;
+  color: white;
 }
 
 .city-search-engine {
