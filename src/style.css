@@ -10,6 +10,7 @@ body {
 
 ul {
   list-style-type: none;
+  line-height: 1.6;
 }
 
 .city-name{
@@ -17,9 +18,9 @@ ul {
   font-size: 35px;
   color: white;
   position: relative;
-  top: 5px;
+  top: -20px;
   left: 150px;
-  margin: 20px;
+  margin: 25px;
 }
 
 .city-search-engine {
@@ -58,7 +59,7 @@ ul {
   position: relative;
   top: 5px;
   left: 150px;
-  margin: 20px;
+  margin: 10px;
   color: white;
   font-weight: 0, 700;
 }
