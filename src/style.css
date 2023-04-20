@@ -35,10 +35,11 @@ li:first-letter {
   font-weight: 0, 100;
 }
 
+.city-search-engine button{
+  margin: 5px;
+}
+
 .current-city-button {
-  position: relative;
-  top: -62px;
-  left: 115px;
   background-color: rgab(0,0,0,0);
 }
 
@@ -93,7 +94,9 @@ padding: 0px 20px;
 
 
 .week-preview {
-  margin: 5px;
+  margin: 10px;
+  position: relative;
+  bottom: -20px;
 }
 
 .week-preview .forecast-day {
@@ -106,12 +109,11 @@ padding: 0px 20px;
   text-align: center;
   font-size: 110%;
 }
-
-
   
 .open-source-link {
-    color: white;
-    margin: 10px;
+  position: relative;
+  bottom: -30px;
+  margin: 10px;
 }
 
 .city-weather .active {
