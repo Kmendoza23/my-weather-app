@@ -6,10 +6,10 @@ body {
   left: 0;
   overflow: hidden;
   font-family: "Plus Jakarta Sans", sans-serif;
+  color: white;
 }
 
 ul {
-  color: white;
   margin: 0px;
   padding: 0px;
   font-weight: 0, 600;
@@ -36,7 +36,6 @@ li:first-letter {
 }
 
 .current-city-button {
-  position: relative;
   top: -61px;
   left: 305px;
   margin: 0px 0px 0px 30px;
@@ -55,36 +54,34 @@ li:first-letter {
   max-width: 600px;
 }
 
-.city-name{
+.overview {
+margin-bottom: 20px;
+}
+
+.overview .city-name{
   font-size: 35px;
-  color: white;
   margin: 25px;
 }
 
-.weather-info img {
+.city-weather {
+  position: relative;
+  top: 5px;
+  font-weight: 0, 700;
+}
+
+.city-weather img {
   margin-right: 5px;
   height: 64px;
   width: 64px;
 }
 
-
-.city-weather {
-  position: relative;
-  top: 5px;
-  margin: 10px;
-  color: white;
-  font-weight: 0, 700;
-}
-
 .temperature {
-  color: #ffffff;
   font-size: 70px;
   font-weight: 500px;
   line-height: 1;
 }
 
 .units {
-  position: relative;
   top: -35px;
   left: 10px;
   font-size: 25px;
@@ -102,7 +99,7 @@ li:first-letter {
 }
 
 .week-preview {
-  color: white;
+  margin: 5px;
 }
   
 .open-source-link {
