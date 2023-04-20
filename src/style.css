@@ -13,13 +13,18 @@ ul {
   line-height: 1.6;
 }
 
+li:first-letter {
+  text-transform: capitalize;
+  color: white;
+  margin: 10px;
+  font-weight: 0, 600;
+}
+
 .city-name{
-  display: block;
   font-size: 35px;
   color: white;
   position: relative;
   top: -20px;
-  left: 150px;
   margin: 25px;
 }
 
@@ -77,14 +82,6 @@ ul {
   font-size: 25px;
 }
 
-.weather-details {
-  position: relative;
-  top: -220px;
-  left: 450px;
-  color: white;
-  margin: 10px;
-  font-weight: 0, 600;
-}
 
 .weather-details-wrapper{
   margin: 5px;
