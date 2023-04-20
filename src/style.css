@@ -36,9 +36,9 @@ li:first-letter {
 }
 
 .current-city-button {
-  top: -61px;
-  left: 305px;
-  margin: 0px 0px 0px 30px;
+  position: relative;
+  top: -50px;
+  left: 115px;
   background-color: rgab(0,0,0,0);
 }
 
@@ -55,7 +55,8 @@ li:first-letter {
 }
 
 .overview {
-margin-bottom: 20px;
+margin: 20px auto;
+padding: 0px 20px;
 }
 
 .overview .city-name{
@@ -75,32 +76,36 @@ margin-bottom: 20px;
   width: 64px;
 }
 
-.temperature {
+.city-weather .temperature {
   font-size: 70px;
   font-weight: 500px;
   line-height: 1;
 }
 
-.units {
+.city-weather.units {
+  position: relative;
   top: -35px;
   left: 10px;
   font-size: 25px;
 }
 
-.forecast-day {
+
+.week-preview {
+  margin: 5px;
+}
+
+.week-preview .forecast-day {
   text-align: center;
   font-weight: 600;
   font-size: 100%;
 }
 
-.forecast-temp {
+.week-preview .forecast-temp {
   text-align: center;
   font-size: 110%;
 }
 
-.week-preview {
-  margin: 5px;
-}
+
   
 .open-source-link {
     color: white;
