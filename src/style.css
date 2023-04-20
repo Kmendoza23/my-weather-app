@@ -89,6 +89,7 @@ ul {
 
 .weather-details-wrapper{
   margin: 5px;
+  left: 300px;
 }
 .forecast-day {
   text-align: center;
