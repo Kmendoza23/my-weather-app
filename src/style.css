@@ -37,7 +37,7 @@ li:first-letter {
 
 .current-city-button {
   position: relative;
-  top: -50px;
+  top: -62px;
   left: 115px;
   background-color: rgab(0,0,0,0);
 }
@@ -55,13 +55,15 @@ li:first-letter {
 }
 
 .overview {
-margin: 20px auto;
+position: relative;
+top: -25px;
 padding: 0px 20px;
 }
 
 .overview .city-name{
   font-size: 35px;
-  margin: 25px;
+  padding: 12px 0px;
+  margin: 0px 12px;
 }
 
 .city-weather {
@@ -82,7 +84,7 @@ padding: 0px 20px;
   line-height: 1;
 }
 
-.city-weather.units {
+.city-weather .units {
   position: relative;
   top: -35px;
   left: 10px;
