@@ -58,8 +58,6 @@ li:first-letter {
 .city-name{
   font-size: 35px;
   color: white;
-  position: relative;
-  top: -20px;
   margin: 25px;
 }
 
@@ -92,11 +90,6 @@ li:first-letter {
   font-size: 25px;
 }
 
-
-.weather-details-wrapper{
-  margin: 5px;
-  left: 300px;
-}
 .forecast-day {
   text-align: center;
   font-weight: 600;
