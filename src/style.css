@@ -92,7 +92,7 @@ padding: 0px 20px;
   font-size: 25px;
 }
 
-.city-weather .units link{
+.city-weather .units a:link{
   text-decoration: none;
 }
 
