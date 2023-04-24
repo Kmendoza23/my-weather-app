@@ -96,19 +96,19 @@ padding: 0px 20px;
   text-decoration: none;
 }
 
-.week-preview {
+.week-forecast {
   margin: 10px;
   position: relative;
   bottom: -20px;
 }
 
-.week-preview .forecast-day {
+.week-forecast .forecast-day {
   text-align: center;
   font-weight: 600;
   font-size: 100%;
 }
 
-.week-preview .forecast-temp {
+.week-forecast .forecast-temp {
   text-align: center;
   font-size: 110%;
 }
