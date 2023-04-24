@@ -100,16 +100,15 @@ padding: 0px 20px;
   margin: 10px;
   position: relative;
   bottom: -20px;
+  text-align: center;
 }
 
 .week-forecast .forecast-day {
-  text-align: center;
   font-weight: 600;
   font-size: 100%;
 }
 
 .week-forecast .forecast-temp {
-  text-align: center;
   font-size: 110%;
 }
   
