@@ -77,7 +77,6 @@ function search(city) {
 
   axios.get(apiUrl).then(showCurrentTemperature);
 }
-displayForecast();
 
 function userSubmit(event) {
   event.preventDefault();
