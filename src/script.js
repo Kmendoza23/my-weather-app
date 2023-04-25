@@ -24,14 +24,15 @@ function formatDate(timestamp) {
 
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast")
-
+  
+  let days = ["Mon", "Tues", "Wed", "Thurs"];
+  
   let forecastHTML = `<div class="row">`;
-  let day = ["Mon", "Tues", "Wed", "Thurs"];
-  day.forEach(function(day) {
+  days.forEach(function (day) {
   forecastHTML = forecastHTML + `
             <div class="col-2">
               <div class="forecast-day">${day}</div>
-              <img
+                <img
                   src="http://openweathermap.org/img/wn/50d@2x.png"
                   alt=""
                   width="42"
@@ -76,7 +77,7 @@ function search(city) {
 
   axios.get(apiUrl).then(showCurrentTemperature);
 }
-
+displayForecast();
 
 function userSubmit(event) {
   event.preventDefault();
