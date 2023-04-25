@@ -22,6 +22,10 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+}
+
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast")
   
@@ -69,6 +73,9 @@ function showCurrentTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+getForecast(response.data.coord);
+
 }
 
 function search(city) {
