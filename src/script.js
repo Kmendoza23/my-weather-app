@@ -41,12 +41,12 @@ function displayForecast() {
                   <span class="max-temp"> 12° </span>
                   <span class="min-temp"> 07° </span>
                 </div>
-              </div>
             </div>
           `;
         });
   forecastHTML= forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
 }
 
 function showCurrentTemperature(response) {
