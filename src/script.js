@@ -42,7 +42,8 @@ function displayForecast() {
                 </div>
               </div>
             </div>
-          `;})
+          `;
+        });
   forecastHTML= forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
@@ -74,7 +75,6 @@ function search(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
   axios.get(apiUrl).then(showCurrentTemperature);
-  displayForecast()
 }
 
 
