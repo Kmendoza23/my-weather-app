@@ -122,3 +122,7 @@ padding: 0px 20px;
 .city-weather .active:hover {
   text-decoration: none;
 }
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
